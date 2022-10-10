@@ -44,5 +44,63 @@ public class Main {
         int papersForOne = papersForAll / (studentsCountLP + studentsCountEA + studentsCountLP);
         System.out.println("На каждого ученика рассчитано " + papersForOne + " листов бумаги!");
 
+        // Task 4
+        System.out.println("\n Task 4:");
+        int bottlesInTwoMinutes = 16;
+        int twoMinIn20Min = 20 / 2;
+        int twoMinInDay = 60 * 24 / 2;
+        int twoMinIn3Days = twoMinInDay * 3;
+        int twoMinInMonth = twoMinIn3Days * 10;
+        System.out.println("За 20 минут работы машина произвела бутылок " + bottlesInTwoMinutes * twoMinIn20Min + " штук!");
+        System.out.println("За сутки работы машина произвела бутылок " + bottlesInTwoMinutes * twoMinInDay + " штук!");
+        System.out.println("За 3 суток работы машина произвела бутылок " + bottlesInTwoMinutes * twoMinIn3Days + " штук!");
+        System.out.println("За месяц (30 дней) работы машина произвела бутылок " + bottlesInTwoMinutes * twoMinInMonth + " штук!");
+
+        // Task 5
+        System.out.println("\n Task 5:");
+        int paintBottles = 120;
+        int bottlesForOneClassroom = 2 + 4;
+        int classCount = paintBottles / bottlesForOneClassroom;
+        int paintBottlesWhite = classCount * 2;
+        int paintBottlesBrown = classCount * 4;
+        System.out.println("В школе, где " + classCount + " классов, нужно " + paintBottlesWhite + " банок белой краски и "
+                + paintBottlesBrown + " банок коричневой краски!");
+
+        // Task 6
+        System.out.println("\n Task 6:");
+        int bananaWeight = 80;
+        int bananaCount = 5;
+        int milkWeight = 105;
+        int milkCount = 2;
+        int icecreamWeight = 100;
+        int icecreamCount = 2;
+        int eggWeight = 70;
+        int eggCount = 4;
+        int totalWeight = bananaWeight * bananaCount + milkWeight * milkCount +
+                icecreamWeight * icecreamCount + eggWeight * eggCount;
+        float totalWeightInKG = (float) totalWeight / 1000;
+        System.out.println("Общий вес завтрака спортсмена в килограммах: " + totalWeightInKG);
+
+        // Task 7
+        System.out.println("\n Task 7:");
+        int weightForCorrectInKG = 7;
+        int minCorrectWeightInDay = 250;
+        int maxCorrectWeightInDay = 500;
+
+        int avgCorrectWeightInDay = (minCorrectWeightInDay + maxCorrectWeightInDay) / 2;
+        int weightForCorrectInGram = weightForCorrectInKG * 1000;
+
+        int minNeedDayToCorrect = weightForCorrectInGram / maxCorrectWeightInDay;
+        int maxNeedDayToCorrect = weightForCorrectInGram / minCorrectWeightInDay;
+        int avgNeedDayToCorrect = weightForCorrectInGram / avgCorrectWeightInDay;
+
+        System.out.println("Минимальное количество дней для достижения требуемой весовой " +
+                "категории - " + minNeedDayToCorrect + "дней");
+        System.out.println("Максимальное количество дней для достижения требуемой весовой " +
+                "категории - " + maxNeedDayToCorrect + "дней");
+        System.out.println("Среднеее количество дней для достижения требуемой весовой " +
+                "категории - " + avgNeedDayToCorrect + "дней");
+
+        System.out.println("\n ~ ~ ~ ~ ~ The end ~ ~ ~ ~ ~ \n");
     }
 }
