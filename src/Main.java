@@ -101,6 +101,25 @@ public class Main {
         System.out.println("Среднеее количество дней для достижения требуемой весовой " +
                 "категории - " + avgNeedDayToCorrect + "дней");
 
+        // Task 8
+        System.out.println("\n Task 8:");
+        float MashaSalary = 67760;
+        float DenisSalary = 83690;
+        float TinaSalary = 76230;
+        float raisedMashaSalary = MashaSalary * 1.1f;
+        float raisedDenisSalary = DenisSalary * 1.1f;
+        float raisedTinaSalary = TinaSalary * 1.1f;
+        float yearDiffMashaSalary = (raisedMashaSalary - MashaSalary) * 12;
+        float yearDiffDenisSalary = (raisedDenisSalary - DenisSalary) * 12;
+        float yearDiffTinaSalary = (raisedTinaSalary - TinaSalary) * 12;
+
+        System.out.println("Маша теперь получает " + raisedMashaSalary + " рублей. Годовой доход вырос на "
+                + yearDiffMashaSalary + " рублей");
+        System.out.println("Денис теперь получает " + raisedDenisSalary + " рублей. Годовой доход вырос на "
+                + yearDiffDenisSalary + " рублей");
+        System.out.println("Кристина теперь получает " + raisedTinaSalary + " рублей. Годовой доход вырос на "
+                + yearDiffTinaSalary + " рублей");
+
         System.out.println("\n ~ ~ ~ ~ ~ The end ~ ~ ~ ~ ~ \n");
     }
 }
